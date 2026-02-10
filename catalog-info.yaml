@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: hello-python
+  description: Projeto FastAPI criado via Backstage com CI/CD e ArgoCD
+  annotations:
+    github.com/project-slug: backstage-learning-durelli/hello-python
+    argocd/app-name: hello-python
+    backstage.io/kubernetes-id: hello-python
+  labels:
+    system: hello-python
+    managed-by: backstage
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default
+  system: hello-python
